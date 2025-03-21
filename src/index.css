@@ -1,0 +1,40 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+/* src/index.css - Agrega esto al final del archivo */
+.bg-pattern {
+  position: relative;
+}
+
+.bg-pattern::before {
+  content: "";
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 60%;
+  height: 60%;
+  background-image: url("/src/assets/olimpoLogoWhite.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  opacity: 0.03;
+  z-index: -1;
+  pointer-events: none;
+}
+
+.dark-bg-pattern::before {
+  background-image: url("/src/assets/olimpoLogoWhite.png");
+  opacity: 0.05;
+}
+.LoginPage.tsx{
+    background-color: #f3f4f6;
+    background-image: url("/src/assets/olimpoLogoWhite.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    opacity: 0.03;
+    z-index: -1;
+    pointer-events: none;
+}
